@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/negosites",
+      "handler": "negosite.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negosites/count",
+      "handler": "negosite.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negosites/:id",
+      "handler": "negosite.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/negosites",
+      "handler": "negosite.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/negosites/:id",
+      "handler": "negosite.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/negosites/:id",
+      "handler": "negosite.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

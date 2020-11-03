@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "negosites",
+  "info": {
+    "name": "negosite",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "profiel": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 15
+    },
+    "biografie": {
+      "type": "richtext"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "medium": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "gebruikers"
+    }
+  }
+}

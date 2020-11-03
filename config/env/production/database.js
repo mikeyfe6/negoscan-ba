@@ -8,11 +8,11 @@ module.exports = ({ env }) => ({
       connector: "bookshelf",
       settings: {
         client: "postgres",
-        host: env(config.host),
-        port: env(config.port),
-        database: env(config.database),
-        username: env(config.user),
-        password: env(config.password),
+        host: env(config.DATABASE_HOST),
+        port: env(config.DATABASE_PORT),
+        database: env(config.DATABASE_NAME),
+        username: env(config.DATABASE_USERNAME),
+        password: env(config.DATABASE_PASSWORD),
       },
       options: {
         ssl: true,

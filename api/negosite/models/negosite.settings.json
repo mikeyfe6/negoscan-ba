@@ -35,6 +35,25 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "gebruikers"
+    },
+    "sociallinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sociallinks.sociallinks"
+    },
+    "linklook": {
+      "type": "string"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

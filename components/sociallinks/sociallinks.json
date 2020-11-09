@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sociallinks_sociallinks",
+  "info": {
+    "name": "sociallinks",
+    "icon": "external-link-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string",
+      "default": "\"\""
+    },
+    "twitter": {
+      "type": "string",
+      "default": "\"\""
+    },
+    "instagram": {
+      "type": "string",
+      "default": "\"\""
+    }
+  }
+}

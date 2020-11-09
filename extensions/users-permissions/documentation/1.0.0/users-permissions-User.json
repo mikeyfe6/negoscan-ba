@@ -1274,6 +1274,15 @@
                 "medium": {
                   "type": "string"
                 },
+                "sociallinks": {
+                  "type": "component"
+                },
+                "linklook": {
+                  "type": "string"
+                },
+                "background": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

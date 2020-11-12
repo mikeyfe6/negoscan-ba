@@ -59,9 +59,9 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "gebruikers": {
-      "via": "medium",
-      "collection": "negosite"
+    "gebruiker": {
+      "via": "website",
+      "model": "negosite"
     }
   }
 }

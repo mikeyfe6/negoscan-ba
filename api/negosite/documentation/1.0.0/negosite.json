@@ -597,7 +597,7 @@
               }
             }
           },
-          "medium": {
+          "website": {
             "required": [
               "id",
               "username",
@@ -634,11 +634,8 @@
               "role": {
                 "type": "string"
               },
-              "gebruikers": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "gebruiker": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -759,7 +756,7 @@
           "biografie": {
             "type": "string"
           },
-          "medium": {
+          "website": {
             "type": "string"
           },
           "sociallinks": {

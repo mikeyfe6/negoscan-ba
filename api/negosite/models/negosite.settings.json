@@ -31,10 +31,10 @@
       "plugin": "upload",
       "required": false
     },
-    "medium": {
+    "website": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "gebruikers"
+      "via": "gebruiker"
     },
     "sociallinks": {
       "type": "component",

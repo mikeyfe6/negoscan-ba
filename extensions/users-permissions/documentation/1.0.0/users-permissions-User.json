@@ -1251,47 +1251,44 @@
               }
             }
           },
-          "gebruikers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "profiel"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "profiel": {
-                  "type": "string"
-                },
-                "biografie": {
-                  "type": "string"
-                },
-                "avatar": {
-                  "type": "string"
-                },
-                "medium": {
-                  "type": "string"
-                },
-                "sociallinks": {
-                  "type": "component"
-                },
-                "linklook": {
-                  "type": "string"
-                },
-                "background": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "gebruiker": {
+            "required": [
+              "id",
+              "profiel"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "profiel": {
+                "type": "string"
+              },
+              "biografie": {
+                "type": "string"
+              },
+              "avatar": {
+                "type": "string"
+              },
+              "website": {
+                "type": "string"
+              },
+              "sociallinks": {
+                "type": "component"
+              },
+              "linklook": {
+                "type": "string"
+              },
+              "background": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -1336,11 +1333,8 @@
           "role": {
             "type": "string"
           },
-          "gebruikers": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "gebruiker": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

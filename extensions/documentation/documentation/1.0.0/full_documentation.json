@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/09/2020 7:25:02 AM"
+    "x-generation-date": "11/12/2020 5:18:32 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2740,7 +2740,7 @@
               }
             }
           },
-          "medium": {
+          "website": {
             "required": [
               "id",
               "username",
@@ -2777,11 +2777,8 @@
               "role": {
                 "type": "string"
               },
-              "gebruikers": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "gebruiker": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -2902,7 +2899,7 @@
           "biografie": {
             "type": "string"
           },
-          "medium": {
+          "website": {
             "type": "string"
           },
           "sociallinks": {
@@ -3042,11 +3039,8 @@
                 "role": {
                   "type": "string"
                 },
-                "gebruikers": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "gebruiker": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -3161,47 +3155,44 @@
               }
             }
           },
-          "gebruikers": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "profiel"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "profiel": {
-                  "type": "string"
-                },
-                "biografie": {
-                  "type": "string"
-                },
-                "avatar": {
-                  "type": "string"
-                },
-                "medium": {
-                  "type": "string"
-                },
-                "sociallinks": {
-                  "type": "component"
-                },
-                "linklook": {
-                  "type": "string"
-                },
-                "background": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "gebruiker": {
+            "required": [
+              "id",
+              "profiel"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "profiel": {
+                "type": "string"
+              },
+              "biografie": {
+                "type": "string"
+              },
+              "avatar": {
+                "type": "string"
+              },
+              "website": {
+                "type": "string"
+              },
+              "sociallinks": {
+                "type": "component"
+              },
+              "linklook": {
+                "type": "string"
+              },
+              "background": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -3246,11 +3237,8 @@
           "role": {
             "type": "string"
           },
-          "gebruikers": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "gebruiker": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

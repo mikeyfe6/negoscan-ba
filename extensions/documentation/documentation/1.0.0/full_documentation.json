@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/13/2020 11:23:56 PM"
+    "x-generation-date": "11/20/2020 11:42:47 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -31,7 +31,7 @@
       "description": "Staging server"
     },
     {
-      "url": "https://negoscan-database.herokuapp.com",
+      "url": "YOUR_PRODUCTION_SERVER",
       "description": "Production server"
     }
   ],
@@ -2881,6 +2881,16 @@
               }
             }
           },
+          "bgfree": {
+            "type": "string",
+            "enum": [
+              "zwart",
+              "grijs",
+              "geel",
+              "roze",
+              "bruin"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -2927,6 +2937,16 @@
           },
           "linklook": {
             "type": "string"
+          },
+          "bgfree": {
+            "type": "string",
+            "enum": [
+              "zwart",
+              "grijs",
+              "geel",
+              "roze",
+              "bruin"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -3183,6 +3203,9 @@
                 "type": "string"
               },
               "background": {
+                "type": "string"
+              },
+              "bgfree": {
                 "type": "string"
               },
               "published_at": {

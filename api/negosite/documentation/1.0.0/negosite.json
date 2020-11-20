@@ -738,6 +738,16 @@
               }
             }
           },
+          "bgfree": {
+            "type": "string",
+            "enum": [
+              "zwart",
+              "grijs",
+              "geel",
+              "roze",
+              "bruin"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -784,6 +794,16 @@
           },
           "linklook": {
             "type": "string"
+          },
+          "bgfree": {
+            "type": "string",
+            "enum": [
+              "zwart",
+              "grijs",
+              "geel",
+              "roze",
+              "bruin"
+            ]
           },
           "published_at": {
             "type": "string",

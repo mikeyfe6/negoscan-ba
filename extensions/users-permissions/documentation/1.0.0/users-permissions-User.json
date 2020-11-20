@@ -1281,6 +1281,9 @@
               "background": {
                 "type": "string"
               },
+              "bgfree": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "connections",
+  "info": {
+    "name": "Connection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "links": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "connections"
+    }
+  }
+}

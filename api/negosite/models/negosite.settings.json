@@ -30,9 +30,9 @@
       "required": false
     },
     "website": {
+      "via": "gebruiker",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "gebruiker"
+      "model": "user"
     },
     "sociallinks": {
       "type": "component",

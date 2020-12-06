@@ -15,12 +15,16 @@
       "type": "string"
     },
     "visible": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "links": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "connections"
+    },
+    "hyperlink": {
+      "type": "string"
     }
   }
 }

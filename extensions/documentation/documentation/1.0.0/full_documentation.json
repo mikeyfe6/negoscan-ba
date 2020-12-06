@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/03/2020 9:37:56 PM"
+    "x-generation-date": "12/06/2020 6:50:49 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3180,7 +3180,8 @@
             "type": "string"
           },
           "visible": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "links": {
             "required": [
@@ -3236,6 +3237,9 @@
               }
             }
           },
+          "hyperlink": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3248,9 +3252,13 @@
             "type": "string"
           },
           "visible": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "links": {
+            "type": "string"
+          },
+          "hyperlink": {
             "type": "string"
           },
           "published_at": {
@@ -3402,32 +3410,6 @@
               }
             }
           },
-          "sociallinks": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "facebook": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "twitter": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "instagram": {
-                "type": "string",
-                "default": "\"\""
-              }
-            }
-          },
-          "linklook": {
-            "type": "string"
-          },
           "background": {
             "required": [
               "id",
@@ -3505,6 +3487,18 @@
               "bruin"
             ]
           },
+          "facebooklink": {
+            "type": "string",
+            "default": "#"
+          },
+          "instagramlink": {
+            "type": "string",
+            "default": "#"
+          },
+          "twitterlink": {
+            "type": "string",
+            "default": "#"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3526,32 +3520,6 @@
           "website": {
             "type": "string"
           },
-          "sociallinks": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "facebook": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "twitter": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "instagram": {
-                "type": "string",
-                "default": "\"\""
-              }
-            }
-          },
-          "linklook": {
-            "type": "string"
-          },
           "bgfree": {
             "type": "string",
             "enum": [
@@ -3561,6 +3529,18 @@
               "roze",
               "bruin"
             ]
+          },
+          "facebooklink": {
+            "type": "string",
+            "default": "#"
+          },
+          "instagramlink": {
+            "type": "string",
+            "default": "#"
+          },
+          "twitterlink": {
+            "type": "string",
+            "default": "#"
           },
           "published_at": {
             "type": "string",
@@ -3816,16 +3796,19 @@
               "website": {
                 "type": "string"
               },
-              "sociallinks": {
-                "type": "component"
-              },
-              "linklook": {
-                "type": "string"
-              },
               "background": {
                 "type": "string"
               },
               "bgfree": {
+                "type": "string"
+              },
+              "facebooklink": {
+                "type": "string"
+              },
+              "instagramlink": {
+                "type": "string"
+              },
+              "twitterlink": {
                 "type": "string"
               },
               "published_at": {
@@ -3856,6 +3839,9 @@
                   "type": "boolean"
                 },
                 "links": {
+                  "type": "string"
+                },
+                "hyperlink": {
                   "type": "string"
                 },
                 "published_at": {

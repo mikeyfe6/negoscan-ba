@@ -1272,16 +1272,19 @@
               "website": {
                 "type": "string"
               },
-              "sociallinks": {
-                "type": "component"
-              },
-              "linklook": {
-                "type": "string"
-              },
               "background": {
                 "type": "string"
               },
               "bgfree": {
+                "type": "string"
+              },
+              "facebooklink": {
+                "type": "string"
+              },
+              "instagramlink": {
+                "type": "string"
+              },
+              "twitterlink": {
                 "type": "string"
               },
               "published_at": {
@@ -1312,6 +1315,9 @@
                   "type": "boolean"
                 },
                 "links": {
+                  "type": "string"
+                },
+                "hyperlink": {
                   "type": "string"
                 },
                 "published_at": {

@@ -30,17 +30,9 @@
       "required": false
     },
     "website": {
-      "via": "gebruiker",
       "plugin": "users-permissions",
-      "model": "user"
-    },
-    "sociallinks": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sociallinks.sociallinks"
-    },
-    "linklook": {
-      "type": "string"
+      "model": "user",
+      "via": "gebruiker"
     },
     "background": {
       "model": "file",
@@ -62,6 +54,18 @@
         "roze",
         "bruin"
       ]
+    },
+    "facebooklink": {
+      "type": "string",
+      "default": "#"
+    },
+    "instagramlink": {
+      "type": "string",
+      "default": "#"
+    },
+    "twitterlink": {
+      "type": "string",
+      "default": "#"
     }
   }
 }

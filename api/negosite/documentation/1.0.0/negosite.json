@@ -651,32 +651,6 @@
               }
             }
           },
-          "sociallinks": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "facebook": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "twitter": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "instagram": {
-                "type": "string",
-                "default": "\"\""
-              }
-            }
-          },
-          "linklook": {
-            "type": "string"
-          },
           "background": {
             "required": [
               "id",
@@ -754,6 +728,18 @@
               "bruin"
             ]
           },
+          "facebooklink": {
+            "type": "string",
+            "default": "#"
+          },
+          "instagramlink": {
+            "type": "string",
+            "default": "#"
+          },
+          "twitterlink": {
+            "type": "string",
+            "default": "#"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -775,32 +761,6 @@
           "website": {
             "type": "string"
           },
-          "sociallinks": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "facebook": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "twitter": {
-                "type": "string",
-                "default": "\"\""
-              },
-              "instagram": {
-                "type": "string",
-                "default": "\"\""
-              }
-            }
-          },
-          "linklook": {
-            "type": "string"
-          },
           "bgfree": {
             "type": "string",
             "enum": [
@@ -810,6 +770,18 @@
               "roze",
               "bruin"
             ]
+          },
+          "facebooklink": {
+            "type": "string",
+            "default": "#"
+          },
+          "instagramlink": {
+            "type": "string",
+            "default": "#"
+          },
+          "twitterlink": {
+            "type": "string",
+            "default": "#"
           },
           "published_at": {
             "type": "string",

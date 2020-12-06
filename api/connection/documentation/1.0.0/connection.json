@@ -526,7 +526,8 @@
             "type": "string"
           },
           "visible": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "links": {
             "required": [
@@ -582,6 +583,9 @@
               }
             }
           },
+          "hyperlink": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -594,9 +598,13 @@
             "type": "string"
           },
           "visible": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "links": {
+            "type": "string"
+          },
+          "hyperlink": {
             "type": "string"
           },
           "published_at": {

@@ -561,14 +561,14 @@
                 "role": {
                   "type": "string"
                 },
-                "gebruiker": {
-                  "type": "string"
-                },
                 "connections": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "gebruiker": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"

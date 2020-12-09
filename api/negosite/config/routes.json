@@ -29,7 +29,9 @@
       "path": "/negosites",
       "handler": "negosite.create",
       "config": {
-        "policies": []
+        "policies": [
+          "privateUser"
+        ]
       }
     },
     {

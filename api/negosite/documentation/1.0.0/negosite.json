@@ -516,8 +516,7 @@
     "schemas": {
       "Negosite": {
         "required": [
-          "id",
-          "profiel"
+          "id"
         ],
         "properties": {
           "id": {
@@ -597,60 +596,6 @@
               }
             }
           },
-          "website": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "gebruiker": {
-                "type": "string"
-              },
-              "connections": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "background": {
             "required": [
               "id",
@@ -720,6 +665,7 @@
           },
           "bgfree": {
             "type": "string",
+            "default": "zwart",
             "enum": [
               "zwart",
               "grijs",
@@ -739,6 +685,60 @@
           "twitterlink": {
             "type": "string",
             "default": "#"
+          },
+          "website": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "connections": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "gebruiker": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -747,9 +747,6 @@
         }
       },
       "NewNegosite": {
-        "required": [
-          "profiel"
-        ],
         "properties": {
           "profiel": {
             "type": "string",
@@ -758,11 +755,9 @@
           "biografie": {
             "type": "string"
           },
-          "website": {
-            "type": "string"
-          },
           "bgfree": {
             "type": "string",
+            "default": "zwart",
             "enum": [
               "zwart",
               "grijs",
@@ -782,6 +777,9 @@
           "twitterlink": {
             "type": "string",
             "default": "#"
+          },
+          "website": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

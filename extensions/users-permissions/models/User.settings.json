@@ -59,13 +59,13 @@
       "plugin": "users-permissions",
       "configurable": false
     },
+    "connections": {
+      "collection": "connection",
+      "via": "links"
+    },
     "gebruiker": {
       "via": "website",
       "model": "negosite"
-    },
-    "connections": {
-      "via": "links",
-      "collection": "connection"
     }
   }
 }

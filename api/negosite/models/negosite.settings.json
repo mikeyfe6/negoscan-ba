@@ -13,7 +13,7 @@
   "attributes": {
     "profiel": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": true,
       "maxLength": 15
     },
@@ -28,11 +28,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "website": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "gebruiker"
     },
     "background": {
       "model": "file",
@@ -53,7 +48,8 @@
         "geel",
         "roze",
         "bruin"
-      ]
+      ],
+      "default": "zwart"
     },
     "facebooklink": {
       "type": "string",
@@ -66,6 +62,11 @@
     "twitterlink": {
       "type": "string",
       "default": "#"
+    },
+    "website": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "gebruiker"
     }
   }
 }

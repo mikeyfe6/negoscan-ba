@@ -19,9 +19,9 @@
       "default": false
     },
     "links": {
+      "via": "connections",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "connections"
+      "model": "user"
     },
     "hyperlink": {
       "type": "string"

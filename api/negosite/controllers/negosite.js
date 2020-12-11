@@ -8,7 +8,7 @@
 module.exports = {
   async create(ctx) {
     const { user } = ctx.state;
-    const entities = strapi.query("negosite").find({ website: user.id });
+    const entities = strapi.query("negosite").create({ website: user.id });
     return entities;
   },
 }; // BIND LINK TO USER

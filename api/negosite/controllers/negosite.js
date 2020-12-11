@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  async find(ctx) {
+  async create(ctx) {
     const { user } = ctx.state;
     const entities = strapi.query("negosite").find({ website: user.id });
     return entities;

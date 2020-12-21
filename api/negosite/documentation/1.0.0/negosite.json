@@ -516,7 +516,8 @@
     "schemas": {
       "Negosite": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -690,7 +691,8 @@
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "storecode"
             ],
             "properties": {
               "id": {
@@ -732,6 +734,9 @@
               "gebruiker": {
                 "type": "string"
               },
+              "storecode": {
+                "type": "integer"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -740,6 +745,9 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -747,6 +755,9 @@
         }
       },
       "NewNegosite": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "profiel": {
             "type": "string",
@@ -780,6 +791,9 @@
           },
           "website": {
             "type": "string"
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

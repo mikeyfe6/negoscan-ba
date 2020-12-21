@@ -528,7 +528,8 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "storecode"
               ],
               "properties": {
                 "id": {
@@ -569,6 +570,9 @@
                 },
                 "gebruiker": {
                   "type": "string"
+                },
+                "storecode": {
+                  "type": "integer"
                 },
                 "created_by": {
                   "type": "string"

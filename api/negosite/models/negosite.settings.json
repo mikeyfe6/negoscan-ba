@@ -67,6 +67,11 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "gebruiker"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "private": false
     }
   }
 }

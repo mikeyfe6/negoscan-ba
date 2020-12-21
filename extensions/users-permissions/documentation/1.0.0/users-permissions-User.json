@@ -1188,7 +1188,8 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "storecode"
         ],
         "properties": {
           "id": {
@@ -1287,7 +1288,8 @@
           },
           "gebruiker": {
             "required": [
-              "id"
+              "id",
+              "slug"
             ],
             "properties": {
               "id": {
@@ -1320,6 +1322,9 @@
               "website": {
                 "type": "string"
               },
+              "slug": {
+                "type": "uid"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -1330,13 +1335,17 @@
                 "type": "string"
               }
             }
+          },
+          "storecode": {
+            "type": "integer"
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "storecode"
         ],
         "properties": {
           "username": {
@@ -1380,6 +1389,9 @@
           },
           "gebruiker": {
             "type": "string"
+          },
+          "storecode": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

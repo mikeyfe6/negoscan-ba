@@ -66,6 +66,11 @@
     "gebruiker": {
       "via": "website",
       "model": "negosite"
+    },
+    "storecode": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
     }
   }
 }

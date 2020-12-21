@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/19/2020 8:58:04 PM"
+    "x-generation-date": "12/21/2020 9:33:46 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3187,7 +3187,8 @@
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "storecode"
             ],
             "properties": {
               "id": {
@@ -3228,6 +3229,9 @@
               },
               "gebruiker": {
                 "type": "string"
+              },
+              "storecode": {
+                "type": "integer"
               },
               "created_by": {
                 "type": "string"
@@ -3275,7 +3279,8 @@
       },
       "Negosite": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -3449,7 +3454,8 @@
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "storecode"
             ],
             "properties": {
               "id": {
@@ -3491,6 +3497,9 @@
               "gebruiker": {
                 "type": "string"
               },
+              "storecode": {
+                "type": "integer"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -3499,6 +3508,9 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3506,6 +3518,9 @@
         }
       },
       "NewNegosite": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "profiel": {
             "type": "string",
@@ -3539,6 +3554,9 @@
           },
           "website": {
             "type": "string"
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
@@ -3618,7 +3636,8 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "storecode"
               ],
               "properties": {
                 "id": {
@@ -3659,6 +3678,9 @@
                 },
                 "gebruiker": {
                   "type": "string"
+                },
+                "storecode": {
+                  "type": "integer"
                 },
                 "created_by": {
                   "type": "string"
@@ -3710,7 +3732,8 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "storecode"
         ],
         "properties": {
           "id": {
@@ -3809,7 +3832,8 @@
           },
           "gebruiker": {
             "required": [
-              "id"
+              "id",
+              "slug"
             ],
             "properties": {
               "id": {
@@ -3842,6 +3866,9 @@
               "website": {
                 "type": "string"
               },
+              "slug": {
+                "type": "uid"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -3852,13 +3879,17 @@
                 "type": "string"
               }
             }
+          },
+          "storecode": {
+            "type": "integer"
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "storecode"
         ],
         "properties": {
           "username": {
@@ -3902,6 +3933,9 @@
           },
           "gebruiker": {
             "type": "string"
+          },
+          "storecode": {
+            "type": "integer"
           },
           "created_by": {
             "type": "string"

@@ -748,6 +748,9 @@
           "slug": {
             "type": "uid"
           },
+          "negourl": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -794,6 +797,9 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "negourl": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

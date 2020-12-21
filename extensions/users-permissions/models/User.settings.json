@@ -70,7 +70,8 @@
     "storecode": {
       "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": true,
+      "default": "1234567"
     }
   }
 }

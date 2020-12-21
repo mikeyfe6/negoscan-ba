@@ -1325,6 +1325,9 @@
               "slug": {
                 "type": "uid"
               },
+              "negourl": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -1337,7 +1340,8 @@
             }
           },
           "storecode": {
-            "type": "integer"
+            "type": "integer",
+            "default": "1234567"
           }
         }
       },
@@ -1391,7 +1395,8 @@
             "type": "string"
           },
           "storecode": {
-            "type": "integer"
+            "type": "integer",
+            "default": "1234567"
           },
           "created_by": {
             "type": "string"

@@ -71,7 +71,12 @@
     "slug": {
       "type": "uid",
       "required": true,
-      "private": false
+      "private": false,
+      "targetField": "negourl"
+    },
+    "negourl": {
+      "type": "string",
+      "unique": true
     }
   }
 }

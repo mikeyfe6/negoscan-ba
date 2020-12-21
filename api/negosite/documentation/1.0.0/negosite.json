@@ -744,10 +744,7 @@
           "slug": {
             "type": "uid"
           },
-          "negourl": {
-            "type": "string"
-          },
-          "storecode": {
+          "negocode": {
             "type": "integer"
           },
           "published_at": {
@@ -797,10 +794,7 @@
           "slug": {
             "type": "uid"
           },
-          "negourl": {
-            "type": "string"
-          },
-          "storecode": {
+          "negocode": {
             "type": "integer"
           },
           "published_at": {

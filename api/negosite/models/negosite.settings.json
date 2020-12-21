@@ -64,9 +64,9 @@
       "default": "#"
     },
     "website": {
+      "via": "gebruiker",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "gebruiker"
+      "model": "user"
     },
     "slug": {
       "type": "uid",

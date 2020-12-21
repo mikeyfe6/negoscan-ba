@@ -64,12 +64,12 @@
       "via": "links"
     },
     "gebruiker": {
-      "via": "website",
-      "model": "negosite"
+      "model": "negosite",
+      "via": "website"
     },
     "storecode": {
       "type": "biginteger",
-      "required": true,
+      "required": false,
       "unique": true,
       "default": "1234567"
     }

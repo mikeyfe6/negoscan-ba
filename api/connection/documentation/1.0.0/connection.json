@@ -533,8 +533,7 @@
             "required": [
               "id",
               "username",
-              "email",
-              "storecode"
+              "email"
             ],
             "properties": {
               "id": {

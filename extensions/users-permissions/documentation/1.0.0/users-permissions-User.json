@@ -1188,8 +1188,7 @@
         "required": [
           "id",
           "username",
-          "email",
-          "storecode"
+          "email"
         ],
         "properties": {
           "id": {
@@ -1348,8 +1347,7 @@
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email",
-          "storecode"
+          "email"
         ],
         "properties": {
           "username": {

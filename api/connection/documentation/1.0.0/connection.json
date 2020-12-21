@@ -575,9 +575,6 @@
               "gebruiker": {
                 "type": "string"
               },
-              "storecode": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },

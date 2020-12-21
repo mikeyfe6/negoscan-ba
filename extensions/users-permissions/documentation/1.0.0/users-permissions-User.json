@@ -1327,6 +1327,9 @@
               "negourl": {
                 "type": "string"
               },
+              "storecode": {
+                "type": "integer"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -1337,10 +1340,6 @@
                 "type": "string"
               }
             }
-          },
-          "storecode": {
-            "type": "integer",
-            "default": "1234567"
           }
         }
       },
@@ -1391,10 +1390,6 @@
           },
           "gebruiker": {
             "type": "string"
-          },
-          "storecode": {
-            "type": "integer",
-            "default": "1234567"
           },
           "created_by": {
             "type": "string"

@@ -64,14 +64,8 @@
       "via": "links"
     },
     "gebruiker": {
-      "model": "negosite",
-      "via": "website"
-    },
-    "storecode": {
-      "type": "biginteger",
-      "required": false,
-      "unique": true,
-      "default": "1234567"
+      "via": "website",
+      "model": "negosite"
     }
   }
 }

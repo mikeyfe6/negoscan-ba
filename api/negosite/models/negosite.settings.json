@@ -64,9 +64,9 @@
       "default": "#"
     },
     "website": {
-      "via": "gebruiker",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "gebruiker"
     },
     "slug": {
       "type": "uid",
@@ -76,6 +76,10 @@
     },
     "negourl": {
       "type": "string",
+      "unique": true
+    },
+    "storecode": {
+      "type": "biginteger",
       "unique": true
     }
   }

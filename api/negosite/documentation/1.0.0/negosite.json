@@ -733,9 +733,6 @@
               "gebruiker": {
                 "type": "string"
               },
-              "storecode": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -749,6 +746,9 @@
           },
           "negourl": {
             "type": "string"
+          },
+          "storecode": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -799,6 +799,9 @@
           },
           "negourl": {
             "type": "string"
+          },
+          "storecode": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

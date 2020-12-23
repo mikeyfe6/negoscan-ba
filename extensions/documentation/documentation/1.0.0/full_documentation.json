@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/22/2020 11:07:50 PM"
+    "x-generation-date": "12/23/2020 3:10:57 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3431,7 +3431,8 @@
               "grijs",
               "geel",
               "roze",
-              "bruin"
+              "bruin",
+              "groen"
             ]
           },
           "facebooklink": {
@@ -3532,7 +3533,8 @@
               "grijs",
               "geel",
               "roze",
-              "bruin"
+              "bruin",
+              "groen"
             ]
           },
           "facebooklink": {

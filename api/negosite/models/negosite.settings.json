@@ -74,7 +74,8 @@
       "private": false
     },
     "negocode": {
-      "type": "integer"
+      "type": "integer",
+      "unique": true
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "negocodes",
+  "info": {
+    "name": "Negocode",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "storecode": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "negoprofiel": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "negodigits"
+    }
+  }
+}

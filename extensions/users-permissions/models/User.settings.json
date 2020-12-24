@@ -66,6 +66,10 @@
     "gebruiker": {
       "via": "website",
       "model": "negosite"
+    },
+    "negodigits": {
+      "via": "negoprofiel",
+      "model": "negocode"
     }
   }
 }

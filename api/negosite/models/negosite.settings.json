@@ -14,7 +14,7 @@
     "profiel": {
       "type": "string",
       "required": false,
-      "unique": true,
+      "unique": false,
       "maxLength": 15
     },
     "biografie": {
@@ -73,10 +73,6 @@
       "type": "uid",
       "required": true,
       "private": false
-    },
-    "negocode": {
-      "type": "integer",
-      "unique": true
     }
   }
 }

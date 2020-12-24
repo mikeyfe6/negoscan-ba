@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/negocodes",
+      "handler": "negocode.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negocodes/count",
+      "handler": "negocode.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negocodes/:id",
+      "handler": "negocode.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/negocodes",
+      "handler": "negocode.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/negocodes/:id",
+      "handler": "negocode.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/negocodes/:id",
+      "handler": "negocode.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

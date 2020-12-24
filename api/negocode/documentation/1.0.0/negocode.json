@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/connections": {
+    "/negocodes": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Connection"
+                    "$ref": "#/components/schemas/Negocode"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Connection"
+          "Negocode"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Connection"
+                  "$ref": "#/components/schemas/Negocode"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Connection"
+          "Negocode"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewConnection"
+                "$ref": "#/components/schemas/NewNegocode"
               }
             }
           }
         }
       }
     },
-    "/connections/count": {
+    "/negocodes/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Connection"
+          "Negocode"
         ],
         "parameters": []
       }
     },
-    "/connections/{id}": {
+    "/negocodes/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Connection"
+                  "$ref": "#/components/schemas/Negocode"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Connection"
+          "Negocode"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Connection"
+                  "$ref": "#/components/schemas/Negocode"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Connection"
+          "Negocode"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewConnection"
+                "$ref": "#/components/schemas/NewNegocode"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Connection"
+          "Negocode"
         ],
         "parameters": [
           {
@@ -514,22 +514,19 @@
   },
   "components": {
     "schemas": {
-      "Connection": {
+      "Negocode": {
         "required": [
-          "id"
+          "id",
+          "storecode"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
+          "storecode": {
+            "type": "integer"
           },
-          "visible": {
-            "type": "boolean",
-            "default": false
-          },
-          "links": {
+          "negoprofiel": {
             "required": [
               "id",
               "username",
@@ -586,28 +583,21 @@
               }
             }
           },
-          "hyperlink": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewConnection": {
+      "NewNegocode": {
+        "required": [
+          "storecode"
+        ],
         "properties": {
-          "title": {
-            "type": "string"
+          "storecode": {
+            "type": "integer"
           },
-          "visible": {
-            "type": "boolean",
-            "default": false
-          },
-          "links": {
-            "type": "string"
-          },
-          "hyperlink": {
+          "negoprofiel": {
             "type": "string"
           },
           "published_at": {
@@ -626,7 +616,7 @@
   },
   "tags": [
     {
-      "name": "Connection"
+      "name": "Negocode"
     }
   ]
 }

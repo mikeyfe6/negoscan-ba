@@ -570,6 +570,9 @@
                 "gebruiker": {
                   "type": "string"
                 },
+                "negodigits": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

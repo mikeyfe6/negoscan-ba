@@ -1324,8 +1324,31 @@
               "slug": {
                 "type": "uid"
               },
-              "negocode": {
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "negodigits": {
+            "required": [
+              "id",
+              "storecode"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "storecode": {
                 "type": "integer"
+              },
+              "negoprofiel": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -1386,6 +1409,9 @@
             }
           },
           "gebruiker": {
+            "type": "string"
+          },
+          "negodigits": {
             "type": "string"
           },
           "created_by": {

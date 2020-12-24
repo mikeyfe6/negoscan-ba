@@ -734,6 +734,9 @@
               "gebruiker": {
                 "type": "string"
               },
+              "negodigits": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -744,9 +747,6 @@
           },
           "slug": {
             "type": "uid"
-          },
-          "negocode": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -795,9 +795,6 @@
           },
           "slug": {
             "type": "uid"
-          },
-          "negocode": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",

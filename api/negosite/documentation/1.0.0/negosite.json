@@ -525,7 +525,7 @@
           },
           "profiel": {
             "type": "string",
-            "maxLength": 15
+            "maxLength": 35
           },
           "biografie": {
             "type": "string"
@@ -761,7 +761,7 @@
         "properties": {
           "profiel": {
             "type": "string",
-            "maxLength": 15
+            "maxLength": 35
           },
           "biografie": {
             "type": "string"

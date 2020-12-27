@@ -15,7 +15,7 @@
       "type": "string",
       "required": false,
       "unique": false,
-      "maxLength": 15
+      "maxLength": 35
     },
     "biografie": {
       "type": "richtext"

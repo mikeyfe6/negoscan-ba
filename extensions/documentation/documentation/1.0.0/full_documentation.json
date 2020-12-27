@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/27/2020 11:11:13 PM"
+    "x-generation-date": "12/28/2020 12:24:22 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3896,7 +3896,7 @@
           },
           "profiel": {
             "type": "string",
-            "maxLength": 15
+            "maxLength": 35
           },
           "biografie": {
             "type": "string"
@@ -4132,7 +4132,7 @@
         "properties": {
           "profiel": {
             "type": "string",
-            "maxLength": 15
+            "maxLength": 35
           },
           "biografie": {
             "type": "string"

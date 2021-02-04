@@ -1324,6 +1324,12 @@
               "slug": {
                 "type": "uid"
               },
+              "whatsapplink": {
+                "type": "integer"
+              },
+              "tiktoklink": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

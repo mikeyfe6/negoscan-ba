@@ -749,6 +749,12 @@
           "slug": {
             "type": "uid"
           },
+          "whatsapplink": {
+            "type": "integer"
+          },
+          "tiktoklink": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -797,6 +803,12 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "whatsapplink": {
+            "type": "integer"
+          },
+          "tiktoklink": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

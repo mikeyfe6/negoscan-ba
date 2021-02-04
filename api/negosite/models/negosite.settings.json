@@ -74,6 +74,12 @@
       "type": "uid",
       "required": true,
       "private": false
+    },
+    "whatsapplink": {
+      "type": "biginteger"
+    },
+    "tiktoklink": {
+      "type": "string"
     }
   }
 }
